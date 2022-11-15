@@ -1,127 +1,126 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 
-:root{
-    --header-height : 3rem;
-  
+:root {
+    --header-height: 3rem;
+
     /* purple 250 Green 142 Bleu 130 Pink 340 */
-  
-    --hue-color: 250; 
+
+    --hue-color: 250;
     --first-color: hsl(var(--hue-color), 69%, 61%);
-    --first-color-second: hsl(var(--hue-color), 69%, 61%); ;
-    --first-color-alt: hsl(var(--hue-color), 57%, 53%); 
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    ;
+    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-    --title-color:  hsl(var(--hue-color), 8%, 15%); 
-    --text-color:  hsl(var(--hue-color), 8%, 45%); 
-    --text-color-light: hsl(var(--hue-color), 8%, 65%); 
-    --input-color: hsl(var(--hue-color), 70%, 96%); 
-    --body-color: hsl(var(--hue-color), 60%, 99%); 
+    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color: hsl(var(--hue-color), 8%, 45%);
+    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+    --input-color: hsl(var(--hue-color), 70%, 96%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
     --container-color: #FFF;
-  
+
     --body-font: 'Poppins', sans-serif;
-  
+
     /* 0.5rem= 8px, 1 rem = 16px, 1.5rem = 24px */
-    --big-font-size: 2rem ;
-    --h1-font-size: 1.5rem ;
-    --h2-font-size: 1.25rem ;
-    --h3-font-size: 1.125rem ;
-    --normal-font-size: .938rem ;
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
     --small-font-size: .813rem;
-    --smaller-font-size: .75rem ;
-  
-    --font-medium: 500 ;
+    --smaller-font-size: .75rem;
+
+    --font-medium: 500;
     --font-semi-bold: 600;
-  
+
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px */
-  
-    --mb-0-25: .25rem  ;
+
+    --mb-0-25: .25rem;
     --mb-0-5: .5rem;
-    --mb-0-75: .75rem ;
-    --mb-1: 1rem ;
-    --mb-1-5: 1.5rem ;
-    --mb-2: 2rem ;
-    --mb-2-5: 2.5rem ;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
     --mb-3: 3rem;
-  
-    --z-tooltip: 10 ;
+
+    --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
 }
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     margin: auto;
     padding: auto;
 }
-  
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
 ul {
-    
+
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: rgb(255, 255, 255);
     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
-  }
-  
+}
+
 .nav__item {
-    
-  
+
+
     float: left;
     padding-top: 5px;
-  }
-  
-  li a {
-    
+}
+
+li a {
+
     display: block;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    
-  }
-  
-  /* li a:hover:not(.active) {
+
+}
+
+/* li a:hover:not(.active) {
     background-color: #111;
   } */
-  
-  .nav_icon {
-    
+
+.nav_icon {
+
     float: right;
-  }
+}
 
- .nav__item :hover {
-       
+.nav__item :hover {
+
     background-color: rgb(225, 235, 218);
-  }
+}
 
-  .nav__link{
+.nav__link {
     margin-top: 7px;
     margin-bottom: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 5px;
-  }
+}
 
-  .nav__list{
-    position:fixed;
+.nav__list {
+    position: fixed;
     width: 100%;
-    z-index:1000;
-  }
+    z-index: 1000;
+}
 
-.presentation_container{
-    padding-top: 12% ;
+.presentation_container {
+    padding-top: 12%;
     padding-left: 13%;
     float: left;
     width: 50%;
@@ -136,32 +135,39 @@ ul {
 
 }
 
-.bonjour{
+.bonjour {
 
     font-size: 30px;
     padding-bottom: 0.15%;
     font-family: 'Poppins', sans-serif;
     font-style: bold;
-    color:rgba(210, 162, 226, 0.8)
-
+    color: rgba(210, 162, 226, 0.8)
 }
 
-.nom{
+.nom {
     font-size: 30px;
     padding-bottom: 6%;
     font-family: 'Poppins', sans-serif;
     font-style: bold;
-    color:rgba(213, 238, 204, 0.9)
-
+    color: rgba(213, 238, 204, 0.9)
 }
 
-.texte{
+.texte {
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
-    padding-bottom: 15%;
+
 }
 
-.btn{
+/* .btn_contain{
+    padding-top: 15%;
+} */
+
+.presentationTexte {
+    padding-bottom: 10%;
+
+}
+
+.btn {
     font-size: 15px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
@@ -176,33 +182,32 @@ ul {
 
 }
 
-.contact{
-    background-color:rgba(213, 238, 204, 0.9);
-    
+.contact {
+    background-color: rgba(213, 238, 204, 0.9);
+
 
 }
 
-.contact:hover{
+.contact:hover {
     background-color: rgba(213, 238, 204, 0.603)
-
 }
 
-section{
+section {
     height: 100%;
     padding-bottom: 90px;
-    display: block; 
+    display: block;
     padding-top: 10px;
-    
+
 }
 
-.propos_container{
+.propos_container {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
-   
 
-} 
+
+}
 
 .aPropos {
     margin-top: 90px;
@@ -211,43 +216,131 @@ section{
 
 }
 
-.aProposTexte{
+.aProposTexte {
     text-align: justify;
     padding-bottom: 5%;
 
 }
 
-.btn_aPropos{
+.btn_aPropos {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 3%;
-    
-}
-
-.cv{
-    background-color:rgba(213, 238, 204, 0.9);
-    
 
 }
 
-.cv:hover{
+.cv {
+    background-color: rgba(213, 238, 204, 0.9);
+
+
+}
+
+.cv:hover {
     background-color: rgba(213, 238, 204, 0.603)
+}
+
+.lettre {
+    background-color: rgba(210, 162, 226, 0.47);
 
 }
 
-.lettre{
-    background-color:rgba(210, 162, 226, 0.47);
-    
-    
-    
-
-}
-
-.lettre:hover{
+.lettre:hover {
     background-color: rgba(210, 162, 226, 0.374)
+}
+
+#formation {
+    display: flex;
+    flex-direction:row-reverse;
+    float: left;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 5%;
+
+}
+
+#experience {
+    float: right;
+    padding-right: 33%;
+    padding-top: 5%;
+}
+
+.texte_bulle {
+    text-align: center;
+}
+
+.annee {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 170px;
+    margin-bottom: 15%;
+
+
+}
+
+.titre_bulle {
+    font-weight: 700;
+}
+
+.bulle {
+
+    width: 170px;
+    height: 170px;
+    background-color: rgb(116, 96, 193);
+    padding: 5px;
+    margin-bottom: 6px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    border-radius: 100px;
+
+
 
 }
 
 
+.bulleEte2021 {
+    margin-top: 59%;
+}
 
+
+.titre_experience {
+    /* padding-bottom: 60px; */
+}
+
+.bulle2021 {
+    padding-top: 22%;
+
+}
+
+.bulle2020 {
+    padding-top: 19%;
+}
+
+.bulleEte2021 {
+    padding-top: 12%;
+    background-color: rgba(210, 162, 226, 0.37);
+
+}
+
+.formation_bulle {
+    background-color: rgba(196, 233, 183, 0.45);
+}
+
+.fleche {
+    padding-left: 3%;
+    padding-top: 40%;
+    height: 240px;
+    margin-left: 20px; 
+    width: 140px;
+       
+   
+}
+
+.blobExperience_svg{
+    float: right;
+    padding-left: 6%;
+    padding-top: 9%;
+    background-color: blue;
+}
