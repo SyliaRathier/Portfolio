@@ -57,7 +57,8 @@
 }
 
 body{
-    height: 9000px;
+    margin: auto;
+    padding: auto;
 }
   
 html{
@@ -127,10 +128,18 @@ ul {
 
 }
 
+.titre {
+    font-size: 30px;
+    padding-bottom: 0.15%;
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
+
+}
+
 .bonjour{
 
     font-size: 30px;
-    padding-bottom: 2%;
+    padding-bottom: 0.15%;
     font-family: 'Poppins', sans-serif;
     font-style: bold;
     color:rgba(210, 162, 226, 0.8)
@@ -152,20 +161,92 @@ ul {
     padding-bottom: 15%;
 }
 
-.contact{
+.btn{
     font-size: 15px;
-
+    font-weight: 600;
     font-family: 'Poppins', sans-serif;
-    background-color: rgba(196, 233, 183, 0.45);
     border: none;
     border-radius: 5px;
-    padding: 10px;
     font-style: bolder;
+    color: rgba(45, 42, 42, 0.8);
+    box-shadow: 3px 3px 7px 0 rgba(78, 75, 77, 0.5);
+    width: 180px;
+    padding: 10px;
+
 
 }
 
-.contact :hover{
-    background-color: rgba(13, 20, 10, 0.45);
+.contact{
+    background-color:rgba(213, 238, 204, 0.9);
+    
+
+}
+
+.contact:hover{
+    background-color: rgba(213, 238, 204, 0.603)
+
+}
+
+section{
+    height: 100%;
+    padding-bottom: 90px;
+    display: block; 
+    padding-top: 10px;
+    
+}
+
+.propos_container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+   
+
+} 
+
+.aPropos {
+    margin-top: 90px;
+    text-align: center;
+    padding-bottom: 5%;
+
+}
+
+.aProposTexte{
+    text-align: justify;
+    padding-bottom: 5%;
+
+}
+
+.btn_aPropos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3%;
+    
+}
+
+.cv{
+    background-color:rgba(213, 238, 204, 0.9);
+    
+
+}
+
+.cv:hover{
+    background-color: rgba(213, 238, 204, 0.603)
+
+}
+
+.lettre{
+    background-color:rgba(210, 162, 226, 0.47);
+    
+    
+    
+
+}
+
+.lettre:hover{
+    background-color: rgba(210, 162, 226, 0.374)
+
 }
 
 
