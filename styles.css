@@ -261,8 +261,9 @@ section {
 
 #experience {
     float: right;
-    padding-right: 33%;
+    padding-right: 3%;
     padding-top: 5%;
+   /* background-color: bisque; */
 }
 
 .texte_bulle {
@@ -342,5 +343,4 @@ section {
     float: right;
     padding-left: 6%;
     padding-top: 9%;
-    background-color: blue;
 }
