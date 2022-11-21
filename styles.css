@@ -344,3 +344,58 @@ section {
     padding-left: 6%;
     padding-top: 9%;
 }
+
+/* .projet_container{
+    display: block;
+} */
+
+.blobCapture_svg{
+    /* background-color: blueviolet;
+    text-align: center;
+    width: 45%; */
+    
+    background-color: aqua;
+    width: 36%;
+    height: 80%;
+    box-sizing: border-box; 
+    margin-left: 6%;
+    margin-right: 20%;
+
+
+}
+
+.bar_projet {
+    /* background-color: blue;
+    width: 50px;
+    text-align: center;
+    float: right;
+    flex-direction: column-reverse; */
+    width: 5%;
+    height: 450px;
+    box-sizing: border-box; 
+    background-color: rgb(148, 33, 33);
+    float: right;
+}
+
+.texte_projet{
+    width: 20%;
+    height: 450px;
+    box-sizing: border-box; 
+    background-color: rgb(33, 50, 148);
+
+}
+
+.c{
+   width: 100%;
+   background-color: beige;
+   display: flex;
+   flex-direction: row;
+   /* justify-content: space-around; */
+   flex-flow: wrap;
+}
+
+.div_texte{
+    background-color: rgb(167, 177, 37);
+}
+
+
