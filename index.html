@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <!-- External CSS Link -->
+
+    <script type="module" src="translations.js"></script>
+    <script type="module" src="script.js"></script>
+
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="styleblob.css">
 
@@ -14,15 +18,21 @@
     <!-- Start of Header -->
     <header>
         <ul class="navbar">
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#about">A propos</a></li>
-            <li><a href="#resume">Formation</a></li>
-            <li><a href="#services">Projets</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <!-- <div class="toggle-theme">
-                <label for="themeToggle">Thème sombre</label>
-                <input type="checkbox" id="themeToggle">
-            </div> -->
+            <!-- Franaçais -->
+            <li><a class="fr" href="#home">Accueil</a></li>
+            <li><a class="fr" href="#about">A propos</a></li>
+            <li><a class="fr" href="#resume">Formation</a></li>
+            <li><a class="fr" href="#services">Projets</a></li>
+            <li><a class="fr" href="#contact">Contact</a></li>
+            <!-- English -->
+            <li><a class="en" href="#home">Home</a></li>
+            <li><a class="en" href="#about">About</a></li>
+            <li><a class="en" href="#resume">Education</a></li>
+            <li><a class="en" href="#services">Projects</a></li>
+            <li><a class="en" href="#contact">Contact</a></li>
+            <!-- Switch franch english -->
+            <button id="switch-fr" class="btn_fr active" data-lang="fr">Français</button>
+            <button id="switch-en" class="btn_en" data-lang="en">English</button>
         </ul>
     </header>
     <!-- End of Header -->
@@ -30,10 +40,16 @@
     <!-- Start of Home Section -->
     <section class="home" id="home">
         <div class="home-text">
-            <h3 class="bonjour">Bonjour</h3>
-            <h5> Je suis <span style="color: rgba(212, 101, 168, 1);">Sylia Rathier</span></h5>
-            <h6>Etudiante en <span>3ème année de BUT informatique</span> </h6>
-            <a href="./doc/CV_rathier_sylia.pdf" class="btn" target="_blank">Télécharger CV</a>
+            <!-- Français -->
+            <h3 class="bonjour fr">Bonjour</h3>
+            <h5 class="fr"> Je suis <span class="fr" style="color: rgba(212, 101, 168, 1);">Sylia Rathier</span></h5>
+            <h6 class="fr">Etudiante en <span class="fr">3ème année de BUT informatique</span> </h6>
+            <a href="./doc/CV_rathier_sylia.pdf" class="btn fr" target="_blank">Télécharger CV</a>
+            <!-- English -->
+            <h3 class="hello en">Hello</h3>
+            <h5 class="en"> I am <span class="en" style="color: rgba(212, 101, 168, 1);">Sylia Rathier</span></h5>
+            <h6 class="en">Student in <span class="en">3rd year of Computer Science Bachelor's degree</span> </h6>
+            <a href="./doc/CV_rathier_sylia.pdf" class="btn en" target="_blank">Download CV</a>
         </div>
 
         <div class="home-img">
@@ -83,9 +99,10 @@
     <!-- Start of About Section -->
     <section class="about" id="about">
         <div class="about-text">
-            <h3>A propos de moi</h3>
-            <h2>Je suis étudiante en BUT informatique</h2>
-            <p>Bonjour, je m'appelle Sylia Rathier et je suis actuellement étudiante en 3eme année de BUT informatique à
+            <h3 class="fr">A propos de moi</h3>
+            <h2 class="fr">Je suis étudiante en BUT informatique</h2>
+            <p class="fr">Bonjour, je m'appelle Sylia Rathier et je suis actuellement étudiante en 3eme année de BUT
+                informatique à
                 l’Institut Universitaire Technologique de Montpellier-Sète. J'ai eu mon bac SVT/Physique-Chimie mention
                 Bien en 2021. Je me suis ensuite dirigée vers des études d'informatique en rentrant en première année de
                 BUT informatique. Très intéressée et investie dans l’apprentissage de cette science, j’ai ensuite
@@ -94,7 +111,19 @@
                 projets.</p>
 
             <div class="main-btn">
-                <a href="./doc/CV_rathier_sylia.pdf" class="btn" target="_blank">Télécharger CV</a>
+                <a href="./doc/CV_rathier_sylia.pdf" class="btn fr" target="_blank">Télécharger CV</a>
+            </div>
+            <h3 class="en">About Me</h3>
+            <h2 class="en">I am a Computer Science student</h2>
+            <p class="en">Hello, my name is Sylia Rathier, and I am currently a third-year student in the Computer
+                Science Bachelor's degree program at the Montpellier-Sète University Institute of Technology. I
+                graduated with honors in SVT/Physics-Chemistry in 2021. I then pursued studies in computer science,
+                starting my first year in the Computer Science Bachelor's degree program. Highly interested and
+                dedicated to learning this field, I continued to the second year and then to the third year through an
+                apprenticeship. Over these three years, I have learned a lot and completed several projects.</p>
+
+            <div class="main-btn">
+                <a href="./doc/CV_rathier_sylia.pdf" class="btn en" target="_blank">Download CV</a>
             </div>
         </div>
     </section>
@@ -103,37 +132,69 @@
     <!-- Start of Resume Section -->
     <section class="resume" id="resume">
         <div class="center">
-            <h3>Education & Experiences</h3>
+            <h3 class="fr">Education & Experiences</h3>
+            <h3 class="en">Education & Experiences</h3>
+
         </div>
 
         <div class="resume-content">
 
             <div class="box">
-                <h6>Septembre 2023 - En cours</h6>
-                <h4>Alternante en développement web</h4>
-                <p>Développement d'application web</p>
-                <h5>Conseil départemental des Pyrénées-Orientales</h5>
+                <!-- Français -->
+                <h6 class="fr">Septembre 2023 - En cours</h6>
+                <h4 class="fr">Alternante en développement web</h4>
+                <p class="fr">Développement d'application web</p>
+                <h5 class="fr">Conseil départemental des Pyrénées-Orientales</h5>
+                <!-- English -->
+                <h6 class="en">September 2023 - Present</h6>
+                <h4 class="en">Web Development Apprentice</h4>
+                <p class="en">Web application development</p>
+                <h5 class="en">Departmental Council of Pyrénées-Orientales</h5>
             </div>
 
             <div class="box">
-                <h6>Avril-Juin 2023 - Stage chez Eva&Go</h6>
-                <h4>Stagiaire en développement web</h4>
-                <p>Réalisation de tests unitaires et fonctionnelles</p>
-                <h5>Eval&GO Montpellier</h5>
+                <!-- Français -->
+
+                <h6 class="fr">Avril-Juin 2023 - Stage chez Eva&Go</h6>
+                <h4 class="fr">Stagiaire en développement web</h4>
+                <p class="fr">Réalisation de tests unitaires et fonctionnelles</p>
+                <h5 class="fr">Eval&GO Montpellier</h5>
+                <!-- English -->
+                <h6 class="en">April-June 2023 - Internship at Eva&Go</h6>
+                <h4 class="en">Web Development Intern</h4>
+                <p class="en">Execution of unit and functional tests</p>
+                <h5 class="en">Eval&GO Montpellier</h5>
+
             </div>
 
             <div class="box">
-                <h6>2021-En cours - BUT Informatique</h6>
-                <h4>BUT informatique</h4>
-                <p>Option Réalisation d'application : conception, développement et validation</p>
-                <h5>IUT Montpellier-Sète</h5>
+                <!-- Français -->
+
+                <h6 class="fr">2021-En cours - BUT Informatique</h6>
+                <h4 class="fr">BUT informatique</h4>
+                <p class="fr">Option Réalisation d'application : conception, développement et validation</p>
+                <h5 class="fr">IUT Montpellier-Sète</h5>
+                <!-- English -->
+                <h6 class="en">2021-Present - Computer Science Bachelor's degree</h6>
+                <h4 class="en">Computer Science Bachelor's degree</h4>
+                <p class="en">Application Development Option: design, development, and validation</p>
+                <h5 class="en">IUT Montpellier-Sète</h5>
+
             </div>
 
             <div class="box">
-                <h6>2018-2021 - Lycée Général</h6>
-                <h4>Bac Physique-Chimie - SVT</h4>
-                <p>Option mathématiques complémentaires + section européenne (Anglais)</p>
-                <h5>Aristide Maillol Perpignan</h5>
+                <!-- Français -->
+
+                <h6 class="fr">2018-2021 - Lycée Général</h6>
+                <h4 class="fr">Bac Physique-Chimie - SVT</h4>
+                <p class="fr">Option mathématiques complémentaires + section européenne (Anglais)</p>
+                <h5 class="fr">Aristide Maillol Perpignan</h5>
+                <!-- English -->
+                <h6 class="en">2018-2021 - General High School</h6>
+                <h4 class="en">Physics-Chemistry - SVT Baccalaureate</h4>
+                <p class="en">Additional Mathematics Option + European section (English)</p>
+                <h5 class="en">Aristide Maillol Perpignan</h5>
+
             </div>
     </section>
     <!-- End of Resume Section -->
@@ -141,7 +202,9 @@
     <!-- Start of Services Section -->
     <section class="services" id="services">
         <div class="center">
-            <h3>Projets</h3>
+            <h3 class="fr">Projets</h3>
+            <h3 class="en">Projects</h3>
+
         </div>
 
         <div class="service-content">
@@ -149,9 +212,14 @@
             <a href="./projet3.html">
                 <div class="row">
                     <i class='bx bx-code-alt'></i>
-                    <h3>ShortCut</h3>
-                    <p>Sujet : reprendre un projet existant en améliorant les perfomances et en adaptant l'interface
+                    <h3 class="fr">ShortCut</h3>
+                    <p class="fr">Sujet : reprendre un projet existant en améliorant les perfomances et en adaptant
+                        l'interface
                     </p>
+                    <!-- English -->
+                    <h3 class="en">ShortCut</h3>
+                    <p class="en">Topic: Take over an existing project by improving performance and adapting the
+                        interface.</p>
                 </div>
             </a>
 
@@ -159,8 +227,12 @@
             <a href="./projet2.html">
                 <div class="row">
                     <i class='bx bxl-sketch'></i>
-                    <h3>Your Voice</h3>
-                    <p>Sujet : Application web de décission coollective.</p>
+                    <h3 class="fr">Your Voice</h3>
+                    <p class="fr">Sujet : Application web de décission coollective.</p>
+                    <!-- English -->
+                    <h3 class="en">Your Voice</h3>
+                    <p class="en">Topic: Web application for collective decision-making.</p>
+
                 </div>
             </a>
 
@@ -168,16 +240,25 @@
             <a href="./projet4.html">
                 <div class="row">
                     <i class='bx bxl-sketch'></i>
-                    <h3>Stage chez Eval&GO</h3>
-                    <p>Sujet : Réaliser des tests pour l'application web</p>
+                    <h3 class="fr">Stage chez Eval&GO</h3>
+                    <p class="fr">Sujet : Réaliser des tests pour l'application web</p>
+                    <!-- English -->
+                    <h3 class="en">Internship at Eval&GO</h3>
+                    <p class="en">Topic: Conducting tests for the web application.</p>
+
                 </div>
             </a>
 
             <a href="./projet1.html">
                 <div class="row">
                     <i class='bx bx-code-alt'></i>
-                    <h3>Gestion de projet</h3>
-                    <p>Sujet : Gestion de l’installation d’un espace coworking. Gérer le budget et le temps. </p>
+                    <h3 class="fr">Gestion de projet</h3>
+                    <p class="fr">Sujet : Gestion de l’installation d’un espace coworking. Gérer le budget et le temps.
+                    </p>
+                    <!-- English -->
+                    <h3 class="en">Project Management</h3>
+                    <p class="en">Topic: Managing the installation of a coworking space. Managing budget and time.</p>
+
                 </div>
             </a>
         </div>
@@ -187,7 +268,9 @@
     <!-- Start of Contact Section -->
     <section class="contact" id="contact">
         <div class="contact-center">
-            <h3>Contact</h3>
+            <h3 class="fr">Contact</h3>
+            <h3 class="en">Contact</h3>
+
         </div>
         <div class="reseaux_sociaux">
             <a class="logo_linkedIn" href="https://www.linkedin.com/in/sylia-rathier-5a2b0b232/"><img
@@ -197,7 +280,7 @@
         </div>
     </section>
     <!-- End of Contact Section -->
-    <script src="script.js"></script>
+
 
 </body>
 

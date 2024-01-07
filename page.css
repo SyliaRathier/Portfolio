@@ -1,87 +1,144 @@
-:root{  
-    --first-color-second: hsl(var(--hue-color), 30%, 8%); ;
-  
-    --title-color:  hsl(var(--hue-color), 8%, 95%); 
-    --text-color:  hsl(var(--hue-color), 8%, 75%); 
-   
-    --input-color: hsl(var(--hue-color), 29%, 16%); 
-    --body-color: hsl(var(--hue-color), 28%, 12%); 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* anime font */
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+:root {
+    --first-color-second: hsl(var(--hue-color), 30%, 8%);
+    ;
+
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: hsl(var(--hue-color), 8%, 75%);
+
+    --input-color: hsl(var(--hue-color), 29%, 16%);
+    --body-color: hsl(var(--hue-color), 28%, 12%);
     --container-color: var(--hue-color), 29%, 16%;
-    
 
-    --back-ground : rgba(40, 42, 55, 1);
 
-    --rose : rgba(212, 101, 168, 1);
-    --bleu : rgba(144, 221, 239, 1);
-    --jaune : rgba(240, 250, 144, 1);
-    --vert : rgba(93, 246, 131, 1);
-    --blanc  : rgba(249, 250, 247, 1);
-    --violet : rgba(189, 151, 248, 1);
-    --violet2 : rgb(63, 65, 84);
-    --container : rgba(154, 154, 154, 0.005);
+    --back-ground: rgba(40, 42, 55, 1);
+
+    --rose: rgba(212, 101, 168, 1);
+    --bleu: rgba(144, 221, 239, 1);
+    --jaune: rgba(240, 250, 144, 1);
+    --vert: rgba(93, 246, 131, 1);
+    --blanc: rgba(249, 250, 247, 1);
+    --violet: rgba(189, 151, 248, 1);
+    --violet2: rgb(63, 65, 84);
+    --container: rgba(154, 154, 154, 0.005);
 
 }
 
 
-
-
-
 body {
-    margin: 0;
     font-family: 'Arial', sans-serif;
     /* background-color: #f4f4f4; */
     background-color: var(--back-ground);
     color: var(--blanc);
 }
 
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--back-ground);
+    padding: 24px 14%;
+    transition: .3s;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.737);
+}
+
+.navbar {
+    display: flex;
+
+}
+
+.navbar a {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-decoration: none;
+
+}
+
+.navbar a:hover {
+    color: var(--vert);
+    border-bottom: 2px solid var(--main-color);
+    transition: .3s;
+}
+
+.home {
+    list-style-type: none;
+}
+
+
+
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    padding-top: 90px;
+
     /* background-color: #fff; */
     margin-top: 50px;
     border-radius: 10px;
-    background-color:var(--back-ground);
+    background-color: var(--back-ground);
     box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.555);
 
 }
 
 
-p{
+p {
     color: var(--blanc);
 }
 
-h1{
+.description h2 {
+    margin-bottom: 20px;
+}
+
+h1 {
     text-align: center;
     padding-bottom: 20px;
 }
 
-p{
+p {
     columns: var(--blanc);
 }
 
-.title{
+.title {
     color: var(--blanc);
 }
 
-.description h2{
+.description h2 {
     color: var(--rose);
 
 }
 
-.competences h2{
+.competences h2 {
     color: var(--bleu);
 }
 
-.apprentissage h2{
+.apprentissage h2 {
     color: var(--jaune);
 }
 
-.description h3{
+.description h3 {
     color: var(--vert);
 }
 
-.description, .competences {
+.description,
+.competences {
     margin-bottom: 30px;
 }
 
@@ -100,8 +157,8 @@ ul li {
 
 }
 
-.preuves{
-    padding-top:20px;
+.preuves {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,11 +166,63 @@ ul li {
 
 }
 
-.preuves img{
-    max-width : 700px;
-    max-height : 500px;
+.preuves img {
+    max-width: 700px;
+    max-height: 500px;
     margin-bottom: 50px;
 
 }
 
+.fr {
+    display: true;
+    list-style-type: disc;
+}
 
+.en {
+    display: none;
+    list-style-type: disc;
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 18px 3%;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        background: #0b0b13;
+        position: absolute;
+        top: -500px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 15px 30px 0px rgb(0 0 0 / 70%);
+        text-align: left;
+        transition: 0.2s ease;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 1rem;
+        padding: 1rem;
+        border-left: 2px solid var(--main-color);
+    }
+
+    .navbar.active {
+        top: 100%;
+    }
+
+}

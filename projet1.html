@@ -4,66 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+
     <link rel="stylesheet" href="page.css">
     <title>Présentation du Projet</title>
 </head>
 
 <body>
+    <header>
+        <ul class="navbar en">
+            <li class="home"><a href="index.html">Home</a></li>
+        </ul>
+        <ul class="navbar fr">
+            <li class="home"><a href="index.html">Accueil</a></li>
+        </ul>
+        <button id="switch-fr" class="btn_fr active" data-lang="fr">Français</button>
+        <button id="switch-en" class="btn_en" data-lang="en">English</button>
+    </header>
     <div class="container">
-        <h1 class="title">Gestion de projet</h1>
+        <h1 class="title fr">Gestion de projet</h1>
+        <h1 class="title en">Project Management</h1>
 
-        <section class="description">
+        <section class="description en">
+            <h2>Managing the installation of a coworking space. Managing budget and time.</h2>
+            <p>As part of a group school project with 4 members, we had to learn to work as a team by
+                implementing
+                management tools and understanding client needs.</p>
+            <h3>Topic</h3>
+            <ul>
+                You must help Camille materialize her coworking space project by completing several missions:
+
+                <br><br>
+                <li>Asset referencing: Create a table of company assets with an account number, title,
+                    and
+                    cost, as
+                    well as another table detailing the technical specifications of computer assets, justified by
+                    sources.</li>
+                <li>Project planning: Develop PERT and GANTT for the preliminary stages of the project
+                    launch, based
+                    on Seifer's advice.</li>
+                <li>Financial evaluation: Present a table consolidating the costs of different elements
+                    of
+                    the project,
+                    specifying quantity, unit price, and total amount, while following the general accounting plan.
+                </li>
+                <li>Initial balance: Establish an initial balance considering a fundraising of 1 million
+                    euros, a loan
+                    of 100,000.00 €, and payment policies to suppliers.</li>
+                <li>Specifications: Write a project specifications document, including the six project
+                    management steps,
+                    on approximately 10 pages, with a relevant layout on both content and form.</li>
+            </ul>
+        </section>
+
+
+        <section class="description fr">
             <h2>Gestion de l’installation d’un espace coworking. Gérer le budget et le temps.</h2>
-            <p>Dans le cadre d'un projet scolaire en groupe de 4, nous devions apprendre à travailler en équipe
+            <p>Dans le cadre d'un projet scolaire en groupe de 4, nous devions apprendre à travailler en
+                équipe
                 via la mise en place d'outils de gestion et appréhender les besoins client.
             </p>
+
             <h3>Sujet</h3>
             <ul>
                 Vous devez aider Camille à concrétiser son projet d'espace de coworking en accomplissant plusieurs
                 missions :
 
                 <br><br>
-                <li>Référencer les actifs immobilisés : Créer un tableau des actifs de l'entreprise avec numéro de
+                <li>Référencer les actifs immobilisés : Créer un tableau des actifs de l'entreprise avec
+                    numéro de
                     compte,
                     intitulé, et coût, ainsi qu'un autre tableau détaillant les spécificités techniques des actifs
                     informatiques, justifié par des sources.</li>
-                <li> Planifier le projet : Élaborer le PERT et le GANTT pour les étapes préalables au lancement du
+                <li> Planifier le projet : Élaborer le PERT et le GANTT pour les étapes préalables au
+                    lancement du
                     projet,
                     basé sur les conseils de Seifer.</li>
-                <li>Évaluation financière : Présenter un tableau consolidant les coûts des différents éléments du
+                <li>Évaluation financière : Présenter un tableau consolidant les coûts des différents
+                    éléments du
                     projet, en
-                    précisant quantité, prix unitaire, et montant total, tout en suivant le plan comptable général.</li>
-                <li>Bilan initial : Établir un bilan initial en considérant une levée de fonds de 1 million d'euros, un
+                    précisant quantité, prix unitaire, et montant total, tout en suivant le plan comptable général.
+                </li>
+                <li>Bilan initial : Établir un bilan initial en considérant une levée de fonds de 1
+                    million
+                    d'euros, un
                     emprunt de 100 000,00 €, et des politiques de paiement auprès des fournisseurs.</li>
-                <li>Cahier des charges : Rédiger un cahier des charges du projet, en incluant les six étapes de gestion
+                <li>Cahier des charges : Rédiger un cahier des charges du projet, en incluant les six
+                    étapes
+                    de gestion
                     de
-                    projet, sur environ 10 pages, avec une mise en page pertinente tant sur le fond que sur la forme.
+                    projet, sur environ 10 pages, avec une mise en page pertinente tant sur le fond que sur la
+                    forme.
                 </li>
 
             </ul>
-            <!-- Mettre des images -->
+            <!-- English -->
         </section>
 
-        <section class="preuves">
-            <h4>Pour permettre de planifier et de prévoir les tâches à effectuer, nous avons réalisé un graphe de PERT
+        <section class="preuves fr">
+            <h4>Pour permettre de planifier et de prévoir les tâches à effectuer, nous avons réalisé un
+                graphe de PERT
                 et de GANTT</h4>
             <img src="./img/imagePert.png" alt="">
             <img src="./img/imageGant.png" alt="">
 
         </section>
+        <section class="preuves en">
+            <h4>To plan and predict tasks, we created a PERT and GANTT chart</h4>
 
+            <img src="./img/imagePert.png" alt="">
+            <img src="./img/imageGant.png" alt="">
+
+        </section>
         <section class="competences">
-            <h2>Composantes essentielles</h2>
+            <h2 class="fr">Composantes essentielles</h2>
+            <h2 class="en">Essential Components</h2>
+
             <ul>
                 <li>
-                    <p>CE 5.01 | En communiquant efficacement avec les différents acteurs d'un projet</p>
+                    <p class="fr">CE 5.01 | En communiquant efficacement avec les différents acteurs d'un projet</p>
+                    <p class="en">CE 5.01 | Effectively communicating with various project stakeholders</p>
+
                 </li>
                 <!-- Ajoutez d'autres compétences au besoin -->
             </ul>
         </section>
 
-        <section class="apprentissage">
+        <section class="apprentissage fr">
             <h2>Compétences Acquises</h2>
+
             <ul>
                 <li>
                     <p>AC15.01 | Appréhender les besoins du client et de l’utilisateur</p>
@@ -72,9 +141,27 @@
                     <p>AC15.02 | Mettre en place les outils de gestion de projet</p>
                 </li>
                 <li>
-                    <p>AC15.03 | Identifier les acteurs et les différentes phases d’un cycle de développement</p>
+                    <p>AC15.03 | Identifier les acteurs et les différentes phases d’un cycle de
+                        développement
+                    </p>
                 </li>
-                <!-- Ajoutez d'autres compétences au besoin -->
+            </ul>
+        </section>
+
+        <section class="apprentissage en">
+            <h2>Acquired Skills</h2>
+
+            <ul>
+                <!-- English -->
+                <li>
+                    <p>AC15.01 | Understanding the needs of the client and the user</p>
+                </li>
+                <li>
+                    <p>AC15.02 | Implementing project management tools</p>
+                </li>
+                <li>
+                    <p>AC15.03 | Identifying the actors and different phases of a development cycle</p>
+                </li>
             </ul>
         </section>
 
@@ -82,7 +169,6 @@
 
 
     </div>
-    <script src="script.js"></script>
 </body>
 
 </html>

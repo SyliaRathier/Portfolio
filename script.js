@@ -1,40 +1,37 @@
-//let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
-// menu.onclick = () => {
-//     menu.classList.toggle('bx-x');
-//     navbar.classList.toggle('active');
-// };
 
-// window.onscroll = () => {
-//     menu.classList.remove('bx-x');
-//     navbar.classList.remove('active');
-// };
+document.addEventListener('DOMContentLoaded', function () {
+    // Récupérez les boutons et ajoutez des écouteurs d'événements
+    const switchFr = document.getElementById('switch-fr');
+    const switchEn = document.getElementById('switch-en');
 
-// const sr = ScrollReveal({
-//     distance: '60px',
-//     duration: 2500,
-//     reset: true,
-// });
+    switchFr.addEventListener('click', function () {
+        switchLanguage('fr');
+    });
 
+    switchEn.addEventListener('click', function () {
+        switchLanguage('en');
+    });
 
+    function switchLanguage(lang) {
+        // Active le bouton correspondant
+        switchFr.classList.remove('active');
+        switchEn.classList.remove('active');
+        document.querySelector(`#switch-${lang}`).classList.add('active');
 
-// Pour les couleurs (thèmes claire et sombre)
-const themeToggle = document.getElementById('themeToggle');
-const root = document.documentElement;
+        // Affiche/cache les éléments correspondants
+        const frElements = document.querySelectorAll('.fr');
+        const enElements = document.querySelectorAll('.en');
 
-themeToggle.addEventListener('change', () => {
-    if (themeToggle.checked) {
-        // Thème sombre
-        root.style.setProperty('--bg-color', '#000000');
-        root.style.setProperty('--main-color', '#356c5c');
-        root.style.setProperty('--2nd-main-color', '#ffffffcc');
-        root.style.setProperty('--text-color', '#ffffff');
-    } else {
-        // Thème clair
-        root.style.setProperty('--bg-color', '#ffffff');
-        root.style.setProperty('--main-color', '#0055a5');
-        root.style.setProperty('--2nd-main-color', '#000000cc');
-        root.style.setProperty('--text-color', '#000000');
+        if (lang === 'fr') {
+            frElements.forEach(element => element.style.display = 'block');
+            enElements.forEach(element => element.style.display = 'none');
+        } else {
+            frElements.forEach(element => element.style.display = 'none');
+            enElements.forEach(element => element.style.display = 'block');
+        }
     }
 });
+
+
