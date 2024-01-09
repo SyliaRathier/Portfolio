@@ -239,7 +239,7 @@ section {
 }
 
 .center h3 {
-  color: var(--vert);
+  color: var(--rose);
   font-size: 35px;
   font-weight: 500;
   margin: 0 0 30px;
@@ -308,7 +308,7 @@ section {
 }
 
 .resume h3 {
-  color: var(--bleu);
+  color: var(--violet);
   font-size: 30px;
   font-weight: 580;
   margin: 0 0 30px;
@@ -584,7 +584,7 @@ form .send-btn:hover {
 }
 
 .fr {
-  display: true;
+  display: block;
 }
 
 .en {
