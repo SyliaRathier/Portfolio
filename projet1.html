@@ -12,14 +12,20 @@
 
 <body>
     <header>
-        <ul class="navbar en">
-            <li class="home"><a href="index.html">Home</a></li>
-        </ul>
-        <ul class="navbar fr">
-            <li class="home"><a href="index.html">Accueil</a></li>
-        </ul>
-        <button id="switch-fr" class="btn_fr active" data-lang="fr">Français</button>
-        <button id="switch-en" class="btn_en" data-lang="en">English</button>
+        <div class="navbar">
+            <ul class="en">
+                <li class="home"><a href="index.html">Home</a></li>
+            </ul>
+            <ul class="navbar fr">
+                <li class="home"><a href="index.html">Accueil</a></li>
+            </ul>
+            <button style="background-color: transparent;border: 10px;" id="switch-fr" class="btn_fr active"
+                data-lang="fr"><img src="./icon/icons8-france-circulaire-48.png" style="width: 30px; height: 30px;"
+                    id="icon"></button>
+            <button style="background-color: transparent;border: 10px; " id="switch-en" class="btn_en"
+                data-lang="en"><img src="./icon/icons8-anglais-48.png" style="width: 30px; height: 30px;"
+                    id="icon"></button>
+        </div>
     </header>
     <div class="container">
         <h1 class="title fr">Gestion de projet</h1>
@@ -32,9 +38,6 @@
                 management tools and understanding client needs.</p>
             <h3>Topic</h3>
             <ul>
-                You must help Camille materialize her coworking space project by completing several missions:
-
-                <br><br>
                 <li>Asset referencing: Create a table of company assets with an account number, title,
                     and
                     cost, as
@@ -48,7 +51,7 @@
                     the project,
                     specifying quantity, unit price, and total amount, while following the general accounting plan.
                 </li>
-                <li>Initial balance: Establish an initial balance considering a fundraising of 1 million
+                <li>Initial balance: Establish an initial balance considering fundraising of 1 million
                     euros, a loan
                     of 100,000.00 €, and payment policies to suppliers.</li>
                 <li>Specifications: Write a project specifications document, including the six project
@@ -62,21 +65,17 @@
             <h2>Gestion de l’installation d’un espace coworking. Gérer le budget et le temps.</h2>
             <p>Dans le cadre d'un projet scolaire en groupe de 4, nous devions apprendre à travailler en
                 équipe
-                via la mise en place d'outils de gestion et appréhender les besoins client.
+                via la mise en place d'outils de gestion et appréhender les besoins du client.
             </p>
 
             <h3>Sujet</h3>
             <ul>
-                Vous devez aider Camille à concrétiser son projet d'espace de coworking en accomplissant plusieurs
-                missions :
-
-                <br><br>
                 <li>Référencer les actifs immobilisés : Créer un tableau des actifs de l'entreprise avec
                     numéro de
                     compte,
                     intitulé, et coût, ainsi qu'un autre tableau détaillant les spécificités techniques des actifs
                     informatiques, justifié par des sources.</li>
-                <li> Planifier le projet : Élaborer le PERT et le GANTT pour les étapes préalables au
+                <li>Planifier le projet : Élaborer le PERT et le GANTT pour les étapes préalables au
                     lancement du
                     projet,
                     basé sur les conseils de Seifer.</li>
@@ -98,7 +97,6 @@
                 </li>
 
             </ul>
-            <!-- English -->
         </section>
 
         <section class="preuves fr">
@@ -152,7 +150,6 @@
             <h2>Acquired Skills</h2>
 
             <ul>
-                <!-- English -->
                 <li>
                     <p>AC15.01 | Understanding the needs of the client and the user</p>
                 </li>
@@ -164,9 +161,6 @@
                 </li>
             </ul>
         </section>
-
-
-
 
     </div>
 </body>

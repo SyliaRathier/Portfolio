@@ -34,4 +34,26 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+function toggleButton(buttonId) {
+    var buttons = document.querySelectorAll('.btn_fr, .btn_en');
+    buttons.forEach(function (button) {
+        button.classList.remove('active');
+    });
 
+    var clickedButton = document.getElementById(buttonId);
+    clickedButton.classList.add('active');
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Ajoutez un gestionnaire d'événements pour chaque lien de la barre de navigation
+    document.querySelectorAll('.navbar a').forEach(link => {
+        link.addEventListener('click', function () {
+            // Supprimez la classe "active" de tous les liens
+            document.querySelectorAll('.navbar a').forEach(link => {
+                link.classList.remove('active');
+            });
+            // Ajoutez la classe "active" au lien actuel
+            link.classList.add('active');
+        });
+    });
+});

@@ -238,6 +238,22 @@ section {
   text-align: center;
 }
 
+.active img {
+  border: 1px solid var(--vert);
+  border-radius: 20px;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a.active {
+  border-bottom: 2px solid var(--vert);
+  /* Soulignage vert pour le lien actif */
+}
+
 .center h3 {
   color: var(--rose);
   font-size: 35px;
